@@ -5,7 +5,10 @@ const mongodb = require('mongodb');
 const api = require('./routes/api');
 const customer = require('./routes/customer');
 const users = require('./routes/users');
+const dotenv = require('dotenv');
 
+
+dotenv.config();
 
 const app = express();
 // const dburl = process.env.DB_URL || "mongodb://localhost:27017";
